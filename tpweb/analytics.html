@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mall</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <link rel="stylesheet" href="./analytics.css">
+    
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                <img src="./logo.png"/>
+                <h2>The <span class="primary">Mall</span></h2>
+            </div>
+            <div class="close" id="close-btn">
+                <span class="material-symbols-outlined">
+                    close
+                    </span>
+            </div>
+            </div>
+            <div class="sidebar" >
+                <a href="./index.html" >
+                    <span class="material-symbols-sharp">
+                        grid_view
+                        </span>
+                        <h3> Dashboard</h3>
+                </a>
+                <a href="./Customers.html" >
+                    <span class="material-symbols-sharp">
+                        person
+                        </span>
+                        <h3> Customer</h3>
+                </a>
+                <a href="./Order.html" >
+                    <span class="material-symbols-sharp">
+                        order_approve
+                        </span>
+                        <h3> Oders</h3>
+                </a>
+                <a href="./analytics.html" class="active">
+                    <span class="material-symbols-sharp">
+                        equalizer
+                        </span>
+                        <h3> Analystics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        chat
+                        </span>
+                        <h3> Messages</h3>
+                        <span class="message-count">26</span>
+                </a>
+                <a href="">
+                    <span class="material-symbols-sharp">
+                        inventory
+                        </span>
+                  
+                        <h3> Products</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        inventory_2
+                        </span>
+                        <h3> Add Product</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        report
+                        </span>
+                        <h3> Report</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        settings
+                        </span>
+                        <h3> Settings</h3>
+                </a>
+            
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        logout
+                        </span>
+                        <h3> Logout</h3>
+                </a>
+            
+            </div>
+
+        </aside>
+
+        <!----------------------Main------------------------>
+    <main class="main">
+        <div class="customer-top">    
+            <div>  
+                <h1>Dashboard</h1>
+                <div class="date">
+                    <input type="date"/>
+        
+                </div>
+            </div> 
+     
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-symbols-sharp">
+                            menu
+                            </span>
+                    </button>
+                    <div class="theme-toggle">
+                        <span class="material-symbols-sharp active">
+                            sunny
+                            </span>
+                            <span class="material-symbols-sharp">
+                                dark_mode
+                                </span>
+                    </div>
+                    <div class="profile">
+                        <div class="info">
+                            <p>Hey,<b>Aziz</b> </p>
+                            <small class="text-muted"> Admin</small>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="./aziz.jpg"/>
+        
+                        </div>
+                    </div>
+        
+                </div>
+                    <!-----------------------End Of top------------------------->
+            
+            </div>
+        
+        </div>
+   <div class="Status-container">
+    <div class="order-stats">
+        <div class="sales">
+         
+            <canvas id="don"></canvas>
+
+        
+        
+                </div>
+              
+        </div>    
+        <div class="order-stats">
+            <div class="sales">
+             
+                <canvas id="fon"></canvas>
+
+            
+            
+                    </div>
+                  
+            </div>   
+            <div class="bar-stats">
+                <div class="sales">
+                    <select id="weekly-vistors">
+                        <option value="">select a month</option>
+    
+                        <option value="12, 19, 3, 5, 2, 3">January</option>
+                        <option value="3, 12, 19, 2, 5, 3">February</option>
+                        <option value="5, 3, 2, 12, 19, 3">March</option>
+                        <option value="2, 5, 3, 12, 19, 3">April</option>
+                        <option value="19, 2, 5, 3, 12, 3">May</option>
+                        <option value="3, 5, 2, 19, 3, 12">June</option>
+                        <option value="3, 19, 5, 12, 2, 3">July</option>
+                        <option value="12, 3, 5, 3, 2, 19">August</option>
+                        <option value="5, 3, 12, 19, 3, 2">September</option>
+                        <option value="2, 19, 12, 3, 5, 3">October</option>
+                        <option value="19, 5, 3, 2, 12, 3">November</option>
+                        <option value="3, 2, 19, 12, 3, 5">December</option>
+                    </select>
+                    <canvas id="myChart"></canvas>
+
+                
+                
+                        </div>
+                      
+                </div> 
+    </div>
+    <div class="Status-container2">
+        <div class="month-earned">
+            <canvas id="month"></canvas>
+            <div >        
+                <select id="monthsales">
+                    <option value="">select a month</option>
+
+                    <option value="12, 19, 3, 5, 2, 3">January</option>
+                    <option value="3, 12, 19, 2, 5, 3">February</option>
+                    <option value="5, 3, 2, 12, 19, 3">March</option>
+                    <option value="2, 5, 3, 12, 19, 3">April</option>
+                    <option value="19, 2, 5, 3, 12, 3">May</option>
+                    <option value="3, 5, 2, 19, 3, 12">June</option>
+                    <option value="3, 19, 5, 12, 2, 3">July</option>
+                    <option value="12, 3, 5, 3, 2, 19">August</option>
+                    <option value="5, 3, 12, 19, 3, 2">September</option>
+                    <option value="2, 19, 12, 3, 5, 3">October</option>
+                    <option value="19, 5, 3, 2, 12, 3">November</option>
+                    <option value="3, 2, 19, 12, 3, 5">December</option>
+                </select>
+        </div>
+        </div>
+   
+
+   <div class="months-earned">
+    <p style="display: flex ; align-items: center; justify-content: center;">color of the product</p>
+    <canvas id="expense"></canvas>
+
+        <select id="ProductREF" style="display: flex; justify-content: center; align-items: center;">
+                        <option value="0">select a product reference</option>
+    
+                        <option value="12, 19, 3, 5, 2, 3">#ProductRef1</option>
+<option value="3, 12, 19, 2, 5, 3">#ProductRef2</option>
+<option value="5, 3, 2, 12, 19, 3">#ProductRef3</option>
+<option value="2, 5, 3, 12, 19, 3">#ProductRef4</option>
+<option value="19, 2, 5, 3, 12, 3">#ProductRef5</option>
+<option value="3, 5, 2, 19, 3, 12">#ProductRef6</option>
+<option value="3, 19, 5, 12, 2, 3">#ProductRef7</option>
+<option value="12, 3, 5, 3, 2, 19">#ProductRef8</option>
+<option value="5, 3, 12, 19, 3, 2">#ProductRef9</option>
+<option value="2, 19, 12, 3, 5, 3">#ProductRef10</option>
+<option value="19, 5, 3, 2, 12, 3">#ProductRef11</option>
+<option value="3, 2, 19, 12, 3, 5">#ProductRef12</option>
+
+                    </select>
+   </div>
+   <div class="months-earned">
+    <p style="display: flex ; align-items: center; justify-content: center;"> product stats</p>
+
+    <canvas id="radar"></canvas>
+    
+    <select id="ProductREF2" style="display: flex; justify-content: center; align-items: center;">
+        <option value="0">select a product reference</option>
+
+        <option value="12, 19, 3, 5, 2, 3">#ProductRef1</option>
+<option value="3, 12, 19, 2, 5, 3">#ProductRef2</option>
+<option value="5, 3, 2, 12, 19, 3">#ProductRef3</option>
+<option value="2, 5, 3, 12, 19, 3">#ProductRef4</option>
+<option value="19, 2, 5, 3, 12, 3">#ProductRef5</option>
+<option value="3, 5, 2, 19, 3, 12">#ProductRef6</option>
+<option value="3, 19, 5, 12, 2, 3">#ProductRef7</option>
+<option value="12, 3, 5, 3, 2, 19">#ProductRef8</option>
+<option value="5, 3, 12, 19, 3, 2">#ProductRef9</option>
+<option value="2, 19, 12, 3, 5, 3">#ProductRef10</option>
+<option value="19, 5, 3, 2, 12, 3">#ProductRef11</option>
+<option value="3, 2, 19, 12, 3, 5">#ProductRef12</option>
+
+    </select>
+   </div>
+    </div>
+    <div class="Status-container3">
+        <div class="year-earned">
+            <div>   
+                <button onclick="addDataset()">add </button>
+                <button onclick="clearAllData()">Remove</button></div>
+         
+            <canvas id="year"></canvas>
+
+        </div>
+        <div class="year-earned">
+            <div>
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" value="2023-00-01"/>
+            
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate"  value="2023-17-31"/>
+            <button onclick="filterChartData()">Filter Data</button>
+        </div>
+          
+            <canvas id="dates"></canvas>
+
+        </div>
+ 
+ 
+    </div>
+    </div>
+
+       
+
+
+    <!-----------------------End Of Main------------------------->
+
+    </div>
+       
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@^2"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@^1"></script>
+          
+ <script src="./analytics.js"></script>
+</body>
+</html>

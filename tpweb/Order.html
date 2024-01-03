@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mall</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <link rel="stylesheet" href="./order.css">
+    
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                <img src="./logo.png"/>
+                <h2>The <span class="primary">Mall</span></h2>
+            </div>
+            <div class="close" id="close-btn">
+                <span class="material-symbols-outlined">
+                    close
+                    </span>
+            </div>
+            </div>
+            <div class="sidebar" >
+                <a href="./index.html" >
+                    <span class="material-symbols-sharp">
+                        grid_view
+                        </span>
+                        <h3> Dashboard</h3>
+                </a>
+                <a href="./Customers.html" >
+                    <span class="material-symbols-sharp">
+                        person
+                        </span>
+                        <h3> Customer</h3>
+                </a>
+                <a href="./Order.html" class="active">
+                    <span class="material-symbols-sharp">
+                        order_approve
+                        </span>
+                        <h3> Oders</h3>
+                </a>
+                <a href="./analytics.html">
+                    <span class="material-symbols-sharp">
+                        equalizer
+                        </span>
+                        <h3> Analystics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        chat
+                        </span>
+                        <h3> Messages</h3>
+                        <span class="message-count">26</span>
+                </a>
+                <a href="">
+                    <span class="material-symbols-sharp">
+                        inventory
+                        </span>
+                  
+                        <h3> Products</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        inventory_2
+                        </span>
+                        <h3> Add Product</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        report
+                        </span>
+                        <h3> Report</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        settings
+                        </span>
+                        <h3> Settings</h3>
+                </a>
+            
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        logout
+                        </span>
+                        <h3> Logout</h3>
+                </a>
+            
+            </div>
+
+        </aside>
+
+        <!----------------------Main------------------------>
+    <main>
+        <div class="customer-top">    
+            <div>  
+                <h1>Dashboard</h1>
+                <div class="date">
+                    <input type="date"/>
+        
+                </div>
+            </div> 
+     
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-symbols-sharp">
+                            menu
+                            </span>
+                    </button>
+                    <div class="theme-toggle">
+                        <span class="material-symbols-sharp active">
+                            sunny
+                            </span>
+                            <span class="material-symbols-sharp">
+                                dark_mode
+                                </span>
+                    </div>
+                    <div class="profile">
+                        <div class="info">
+                            <p>Hey,<b>Aziz</b> </p>
+                            <small class="text-muted"> Admin</small>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="./aziz.jpg"/>
+        
+                        </div>
+                    </div>
+        
+                </div>
+                    <!-----------------------End Of top------------------------->
+            
+            </div></div>
+   <div class="Status-container">
+    <div class="order-stats">
+        <div class="sales">
+         
+                <div class="middle">
+                 
+                    <div class="left">   
+                        <h1> Confirmed  </h1>
+                        <h3>25 confirmed order</h3>
+                     
+                    </div>
+
+                    <div class="progress">
+                        
+                            <div  class="circle"> 
+                                <span class="material-symbols-outlined icon">
+                                    recommend
+                                    </span>
+                            </div>
+                     
+                    </div>
+        
+        
+                </div>
+              
+        </div>    
+    
+    </div>
+    <div class="order-stats">
+        <div class="sales">
+         
+            <div class="middle">
+             
+                <div class="left">   
+                    <h1> In Shipping </h1>
+                    <h3>+99 order in shipping</h3>
+                 
+                </div>
+
+                <div class="progress">
+                    
+                        <div  class="circle2"> 
+                            <span class="material-symbols-outlined icon">
+                                local_shipping
+                                </span>
+                        </div>
+                 
+                </div>
+    
+    
+            </div>
+          
+    </div>    
+
+    </div>
+    <div class="order-stats">
+        <div class="sales">
+         
+            <div class="middle">
+             
+                <div class="left">   
+                    <h1> Dlivred  </h1>
+                    <h3>999 order  dilevred</h3>
+                 
+                </div>
+
+                <div class="progress">
+                    
+                        <div  class="circle3"> 
+                            <span class="material-symbols-outlined icon">
+                                quick_reorder
+                                </span>
+                        </div>
+                 
+                </div>
+    
+    
+            </div>
+          
+    </div>    
+
+    </div>
+    <div class="order-stats">
+        <div class="sales">
+         
+            <div class="middle">
+             
+                <div class="left">   
+                    <h1> Returned </h1>
+                    <h3>25 order Returned</h3>
+                 
+                </div>
+
+                <div class="progress">
+                    
+                        <div  class="circle4"> 
+                            <span class="material-symbols-outlined icon">
+                                error
+                                </span>
+                        </div>
+                 
+                </div>
+    
+    
+            </div>
+          
+    </div>    
+
+    </div>
+
+   </div>
+       
+          
+        <!----------------------Recenet Order------------------------>
+        <h2 class="hh">All Customers</h2>
+   <!-- Custom button to trigger file input -->
+   <label for="fileInput" class="custom-file-input">Choose File</label>
+
+   <!-- Display the selected file name (optional) -->
+   <span class="file-name" id="fileName"></span>
+ 
+   <!-- Actual file input (hidden) -->
+   <input type="file" id="fileInput" />
+   <button id="readButton">Read Data</button>
+
+        <div class="sort">
+           
+            <p>filtre the </p>
+            <button class="btn" id="sortbtn">sort</button>
+           
+        </div>
+    <div class="recent-order">
+
+    
+        <table id="ordertable">
+         
+            <thead>
+
+                <tr>
+                    <th>Order Product </th>
+                    <th>reference</th>
+                    <th>price</th>
+                    <th> Stock</th>
+                  
+
+
+                </tr>
+            </thead>
+            <tbody>
+       
+     
+                <!-- <tr>
+                    <td><span> 
+                     <img src="./aziz.jpg" /> 
+                     <div> 
+                         <p id="name"></p>
+                         <p>Remove</p>
+                     </div>
+                    
+                    </span></td>
+                    <td>Mohammedazizcheikh@gmail.com</td>
+                    <td>94 359 613 </td>
+                    <td>15/08/2001</td>
+                    
+                    <td>Nabeul</td>
+                    <td class="success">250dt</td>
+                    <td> Customer</td>
+                    
+                    
+                    
+                    </tr>  -->
+<!-- 
+<tr>
+<td><span> 
+ <img src="./aziz.jpg" /> 
+ <div> 
+     <p>Cheikh Mohamed Aziz</p>
+     <p>Remove</p>
+ </div>
+
+</span></td>
+<td>Mohammedazizcheikh@gmail.com</td>
+<td>94 359 613 </td>
+<td>15/08/2001</td>
+
+<td>Nabeul</td>
+<td class="success">250dt</td>
+<td> Customer</td>
+
+
+
+</tr> -->
+            </tbody>
+        </table>
+     
+    </div>
+    
+    
+    </main>
+
+
+
+    <!-----------------------End Of Main------------------------->
+
+    </div>
+    <script src="order.js"></script>
+</body>
+</html>

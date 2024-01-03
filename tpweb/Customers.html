@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mall</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <link rel="stylesheet" href="./Customer.css">
+    
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                <img src="./logo.png"/>
+                <h2>The <span class="primary">Mall</span></h2>
+            </div>
+            <div class="close" id="close-btn">
+                <span class="material-symbols-outlined">
+                    close
+                    </span>
+            </div>
+            </div>
+            <div class="sidebar" >
+                <a href="./index.html" >
+                    <span class="material-symbols-sharp">
+                        grid_view
+                        </span>
+                        <h3> Dashboard</h3>
+                </a>
+                <a href="./Customers.html" class="active" >
+                    <span class="material-symbols-sharp">
+                        person
+                        </span>
+                        <h3> Customer</h3>
+                </a>
+                <a href="./Order.html" >
+                    <span class="material-symbols-sharp">
+                        order_approve
+                        </span>
+                        <h3> Oders</h3>
+                </a>
+                <a href="./analytics.html">
+                    <span class="material-symbols-sharp">
+                        equalizer
+                        </span>
+                        <h3> Analystics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        chat
+                        </span>
+                        <h3> Messages</h3>
+                        <span class="message-count">26</span>
+                </a>
+                <a href="">
+                    <span class="material-symbols-sharp">
+                        inventory
+                        </span>
+                  
+                        <h3> Products</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        inventory_2
+                        </span>
+                        <h3> Add Product</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        report
+                        </span>
+                        <h3> Report</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        settings
+                        </span>
+                        <h3> Settings</h3>
+                </a>
+            
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        logout
+                        </span>
+                        <h3> Logout</h3>
+                </a>
+            
+            </div>
+
+        </aside>
+
+        <!----------------------Main------------------------>
+    <main>
+        <div class="customer-top">    
+            <div>  
+                <h1>Dashboard</h1>
+                <div class="date">
+                    <input type="date"/>
+        
+                </div>
+            </div> 
+          
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-symbols-sharp">
+                            menu
+                            </span>
+                    </button>
+                    <div class="theme-toggle">
+                        <span class="material-symbols-sharp active">
+                            sunny
+                            </span>
+                            <span class="material-symbols-sharp">
+                                dark_mode
+                                </span>
+                    </div>
+                    <div class="profile">
+                        <div class="info">
+                            <p>Hey,<b>Aziz</b> </p>
+                            <small class="text-muted"> Admin</small>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="./aziz.jpg"/>
+        
+                        </div>
+                    </div>
+        
+                </div>
+                    <!-----------------------End Of top------------------------->
+            
+            </div></div>
+   
+
+        <!----------------------Recenet Order------------------------>
+        <h2 class="hh">All Customers</h2>
+        <div class="sort">
+            <p>Sort the table</p>
+            <button class="btn">sort</button>
+            <p>filtre the </p>
+            <button class="btn">sort</button>
+           
+        </div>
+    <div class="recent-order">
+
+    
+        <table>
+         
+            <thead>
+
+                <tr>
+                    <th>Customer </th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th> birth Date</th>
+                    <th>city</th>
+                    <th> Spends </th>
+                    <th>Role</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+       
+     
+                       <tr>
+                    <td><span> 
+                        <img src="./aziz.jpg" /> 
+                        <div> 
+                            <p>Cheikh Mohamed Aziz</p>
+                            <p>Remove</p>
+                        </div>
+                       
+                    </span></td>
+                    <td>Mohammedazizcheikh@gmail.com</td>
+                    <td>94 359 613 </td>
+                    <td>15/08/2001</td>
+                   
+                    <td>Nabeul</td>
+                    <td class="success">250dt</td>
+                    <td> Customer</td>
+
+
+
+                </tr>
+           
+ 
+                <tr>
+                    <td><span> 
+                        <img src="./aziz.jpg" /> 
+                        <div> 
+                            <p>Cheikh Mohamed Aziz</p>
+                            <p>Remove</p>
+                        </div>
+                       
+                    </span></td>
+                    <td>Mohammedazizcheikh@gmail.com</td>
+                    <td>94 359 613 </td>
+                    <td>15/08/2001</td>
+                   
+                    <td>Nabeul</td>
+                    <td class="success">250dt</td>
+                    <td> Customer</td>
+
+
+
+                </tr> 
+                <tr>
+             <td><span> 
+                 <img src="./aziz.jpg" /> 
+                 <div> 
+                     <p>Cheikh Mohamed Aziz</p>
+                     <p>Remove</p>
+                 </div>
+                
+             </span></td>
+             <td>Mohammedazizcheikh@gmail.com</td>
+             <td>94 359 613 </td>
+             <td>15/08/2001</td>
+            
+             <td>Nabeul</td>
+             <td class="success">250dt</td>
+             <td> Customer</td>
+
+
+
+         </tr> 
+         <tr>
+      <td><span> 
+          <img src="./aziz.jpg" /> 
+          <div> 
+              <p>Cheikh Mohamed Aziz</p>
+              <p>Remove</p>
+          </div>
+         
+      </span></td>
+      <td>Mohammedazizcheikh@gmail.com</td>
+      <td>94 359 613 </td>
+      <td>15/08/2001</td>
+     
+      <td>Nabeul</td>
+      <td class="success">250dt</td>
+      <td> Customer</td>
+
+
+
+  </tr> 
+  <tr>
+<td><span> 
+   <img src="./aziz.jpg" /> 
+   <div> 
+       <p>Cheikh Mohamed Aziz</p>
+       <p>Remove</p>
+   </div>
+  
+</span></td>
+<td>Mohammedazizcheikh@gmail.com</td>
+<td>94 359 613 </td>
+<td>15/08/2001</td>
+
+<td>Nabeul</td>
+<td class="success">250dt</td>
+<td> Customer</td>
+
+
+
+</tr> 
+<tr>
+<td><span> 
+ <img src="./aziz.jpg" /> 
+ <div> 
+     <p>Cheikh Mohamed Aziz</p>
+     <p>Remove</p>
+ </div>
+
+</span></td>
+<td>Mohammedazizcheikh@gmail.com</td>
+<td>94 359 613 </td>
+<td>15/08/2001</td>
+
+<td>Nabeul</td>
+<td class="success">250dt</td>
+<td> Customer</td>
+
+
+
+</tr> 
+<tr>
+<td><span> 
+ <img src="./aziz.jpg" /> 
+ <div> 
+     <p>Cheikh Mohamed Aziz</p>
+     <p>Remove</p>
+ </div>
+
+</span></td>
+<td>Mohammedazizcheikh@gmail.com</td>
+<td>94 359 613 </td>
+<td>15/08/2001</td>
+
+<td>Nabeul</td>
+<td class="success">250dt</td>
+<td> Customer</td>
+
+
+
+</tr> 
+<tr>
+<td><span> 
+ <img src="./aziz.jpg" /> 
+ <div> 
+     <p>Cheikh Mohamed Aziz</p>
+     <p>Remove</p>
+ </div>
+
+</span></td>
+<td>Mohammedazizcheikh@gmail.com</td>
+<td>94 359 613 </td>
+<td>15/08/2001</td>
+
+<td>Nabeul</td>
+<td class="success">250dt</td>
+<td> Customer</td>
+
+
+
+</tr> 
+<tr>
+<td><span> 
+ <img src="./aziz.jpg" /> 
+ <div> 
+     <p>Cheikh Mohamed Aziz</p>
+     <p>Remove</p>
+ </div>
+
+</span></td>
+<td>Mohammedazizcheikh@gmail.com</td>
+<td>94 359 613 </td>
+<td>15/08/2001</td>
+
+<td>Nabeul</td>
+<td class="success">250dt</td>
+<td> Customer</td>
+
+
+
+</tr>
+            </tbody>
+        </table>
+     
+    </div>
+    
+    
+    </main>
+
+
+
+    <!-----------------------End Of Main------------------------->
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
